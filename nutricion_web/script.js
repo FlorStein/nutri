@@ -167,3 +167,45 @@ document.querySelectorAll('.btn-whats').forEach(btn => {
     } catch(err){ /* noop */ }
   }, { passive: true });
 })();
+
+// ===== Flip card animation =====
+(function() {
+  const flipCards = document.querySelectorAll('.flip-card');
+  if (!flipCards.length) return;
+  
+  const isMobileView = () => window.matchMedia('(max-width: 860px)').matches;
+  
+  flipCards.forEach(card => {
+    // Desktop: hover to flip
+    if (!isMobileView()) {
+      card.addEventListener('mouseenter', () => {
+        card.classList.add('flipped');
+      });
+      card.addEventListener('mouseleave', () => {
+        card.classList.remove('flipped');
+      });
+    } else {
+      // Mobile: click to flip
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        card.classList.toggle('flipped');
+      });
+    }
+  });
+  
+  // Handle responsive change (resize)
+  window.addEventListener('resize', () => {
+    flipCards.forEach(card => {
+      const wasFlipped = card.classList.contains('flipped');
+      
+      if (isMobileView()) {
+        // Switch to mobile mode: remove hover listeners, add click
+        card.removeEventListener('mouseenter', handleMouseEnter);
+        card.removeEventListener('mouseleave', handleMouseLeave);
+        // Reset if it was auto-flipped by hover
+        if (wasFlipped) card.classList.remove('flipped');
+      }
+    });
+  });
+})();
+
