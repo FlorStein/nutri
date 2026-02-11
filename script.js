@@ -136,7 +136,7 @@ document.querySelectorAll('.nav-link:not(.submenu-toggle), .submenu-link').forEa
         obs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+  }, { threshold: 0.01, rootMargin: '0px 0px 20% 0px' });
   reveals.forEach(el => observer.observe(el));
 })();
 
