@@ -261,8 +261,9 @@ li { margin: .3rem 0; }
   box-shadow: none;
   border: 0;
   border-bottom: 3px solid var(--cocoa);
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin: 0 auto;
 }
 
 .hero-caption {
