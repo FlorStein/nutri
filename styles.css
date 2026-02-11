@@ -393,6 +393,20 @@ li { margin: .3rem 0; }
   transform: translateY(0);
 }
 
+/* Staggered reveal for card grids */
+.education-grid .education-card.reveal { transition-delay: 0ms; }
+.education-grid .education-card.reveal:nth-child(2) { transition-delay: 80ms; }
+.education-grid .education-card.reveal:nth-child(3) { transition-delay: 160ms; }
+.education-grid .education-card.reveal:nth-child(4) { transition-delay: 240ms; }
+
+.insights-grid .insight-card.reveal { transition-delay: 0ms; }
+.insights-grid .insight-card.reveal:nth-child(2) { transition-delay: 80ms; }
+.insights-grid .insight-card.reveal:nth-child(3) { transition-delay: 160ms; }
+.insights-grid .insight-card.reveal:nth-child(4) { transition-delay: 240ms; }
+.insights-grid .insight-card.reveal:nth-child(5) { transition-delay: 320ms; }
+.insights-grid .insight-card.reveal:nth-child(6) { transition-delay: 400ms; }
+.insights-grid .insight-card.reveal:nth-child(7) { transition-delay: 480ms; }
+
 /* Services */
 .service-grid {
   display: grid;
