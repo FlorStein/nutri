@@ -464,24 +464,58 @@ li { margin: .3rem 0; }
   box-shadow: var(--shadow);
 }
 
+.about-specialties {
+  width: 100%;
+  margin-top: 2.4rem;
+}
+
 .highlights {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1.4rem;
+  margin-top: 0;
 }
 
 .hl-item {
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: .9rem 1rem;
+  padding: 1.2rem 1rem;
   background: rgba(255, 255, 255, 0.7);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.hl-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(27, 24, 21, 0.1);
+  border-color: var(--accent);
+}
+
+.hl-icon {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.hl-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .hl-title {
-  margin: 0 0 .25rem;
+  margin: 0;
   font-weight: 600;
   color: var(--cocoa);
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .hl-text { margin: 0; font-size: .95rem; }
