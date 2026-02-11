@@ -1094,6 +1094,9 @@ li { margin: .3rem 0; }
 
 @media (max-width: 600px) {
   .hero-details { grid-template-columns: 1fr; }
+  .highlights { grid-template-columns: 1fr; }
+  .education-grid { grid-template-columns: 1fr; }
+  .insights-grid { grid-template-columns: 1fr; }
   .btn { width: 100%; }
   .hero-actions { flex-direction: column; align-items: stretch; }
 }
