@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Manzana">
+  <rect width="64" height="64" fill="white"/>
+  <rect x="30" y="8" width="4" height="10" rx="2" fill="#7b4f2a"/>
+  <path d="M40 8c5 0 9 4 9 9-5 0-9-4-9-9z" fill="#4f8f2f"/>
+  <path d="M32 18c-9 0-16 7-16 16 0 12 8 22 16 22s16-10 16-22c0-9-7-16-16-16z" fill="#d94b4b"/>
+  <path d="M26 18c2 4 10 4 12 0" stroke="#b63b3b" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
