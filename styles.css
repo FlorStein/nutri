@@ -235,7 +235,8 @@ li { margin: .3rem 0; }
   display: grid;
   grid-template-columns: minmax(0, .95fr) minmax(0, 1.15fr);
   gap: 2.5rem;
-  align-items: center;
+  align-items: start;
+  align-content: start;
 }
 
 .hero-copy p {
@@ -338,6 +339,48 @@ li { margin: .3rem 0; }
   border-top: 1px solid rgba(74, 56, 46, 0.75);
   border-bottom: 1px solid rgba(231, 178, 185, 0.85);
   padding: 1rem 0;
+}
+
+/* ¿Para quién es esta consulta? */
+.para-quien {
+  background: var(--cream, #f3ede3);
+}
+
+.para-quien-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid rgba(74, 56, 46, 0.2);
+  border-bottom: 1px solid rgba(74, 56, 46, 0.2);
+  padding: 2.5rem 0;
+}
+
+.para-quien-inner h2 {
+  margin-bottom: 1rem;
+}
+
+.para-quien-inner > p {
+  font-style: italic;
+  opacity: 0.75;
+  margin-bottom: 1.25rem;
+}
+
+.para-quien-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.para-quien-list li {
+  padding: 0.5rem 1rem;
+  border-left: 3px solid var(--accent, #e7b2b9);
+  text-align: left;
+  font-size: 0.97rem;
+  background: rgba(255,255,255,0.45);
+  border-radius: 0 4px 4px 0;
 }
 
 /* Animations */
@@ -477,6 +520,11 @@ li { margin: .3rem 0; }
   display: inline-block;
   border-bottom: 1px solid currentColor;
   padding: 0.35rem 0;
+}
+
+.service-text > .btn {
+  margin-top: 1.75rem;
+  align-self: flex-start;
 }
 
 .section.service.alt .service-media { order: 2; }
