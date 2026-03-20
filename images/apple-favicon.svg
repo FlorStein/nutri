@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Manzana verde">
-  <!-- Fondo blanco -->
-  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Manzana rosa">
+  <!-- Fondo blanco redondeado -->
+  <rect width="64" height="64" rx="14" fill="#ffffff"/>
   <!-- Tallo -->
-  <rect x="30" y="7" width="4" height="9" rx="2" fill="#5a3a1a"/>
+  <rect x="30" y="5" width="4" height="9" rx="2" fill="#7a4f2e"/>
   <!-- Hoja -->
-  <path d="M34 10 Q42 5 44 13 Q38 14 34 10Z" fill="#4caf50"/>
-  <path d="M34 10 Q39 8 43 13" stroke="#388e3c" stroke-width="1" fill="none" stroke-linecap="round"/>
-  <!-- Cuerpo de la manzana (verde) -->
-  <path d="M32 17 C20 17 13 26 13 35 C13 48 21 57 32 57 C43 57 51 48 51 35 C51 26 44 17 32 17Z" fill="#6abf4b"/>
-  <!-- Gradiente de brillo (zona clara izquierda) -->
-  <ellipse cx="23" cy="28" rx="6" ry="8" fill="#9de06a" opacity="0.5"/>
+  <path d="M34 10 Q42 4 44 12 Q38 13 34 10Z" fill="#c084a0"/>
+  <path d="M34 10 Q39 6 43 12" stroke="#a0607d" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <!-- Cuerpo manzana rosa -->
+  <path d="M32 16 C20 16 13 25 13 34 C13 47 21 58 32 58 C43 58 51 47 51 34 C51 25 44 16 32 16Z" fill="#f4a7b9"/>
+  <!-- Brillo -->
+  <ellipse cx="23" cy="27" rx="5" ry="7" fill="#fce4ec" opacity="0.65"/>
   <!-- Línea divisoria sutil -->
-  <path d="M32 17 C28 22 28 37 32 57" stroke="#4e9e2d" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M32 16 C29 23 29 40 32 58" stroke="#e07a9a" stroke-width="1.4" fill="none" opacity="0.3"/>
   <!-- Sombra inferior -->
-  <path d="M20 52 Q32 60 44 52" stroke="#3d8b25" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M20 53 Q32 60 44 53" stroke="#d46a8a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.35"/>
 </svg>

@@ -137,6 +137,14 @@ li { margin: .3rem 0; }
   color: var(--cocoa);
   font-weight: 600;
   letter-spacing: .05em;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+}
+
+.brand-logo {
+  flex-shrink: 0;
+  display: block;
 }
 
 .nav-toggle {
